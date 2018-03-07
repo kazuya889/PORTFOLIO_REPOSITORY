@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*==================================================
+	
+PORTFOLIO MOBILE
+(index.html)
+	
+==================================================*/
+
+@media screen and (max-width: 640px) {
+	/*========================
+	基本設定
+	========================*/
+	body{
+		font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+		font-size: 16px;
+		color: #333;
+		 animation: fadeIn 2s ease 0s 1 normal;
+		-webkit-animation: fadeIn 2s ease 0s 1 normal;
+		height:100%;
+	}
+	/*========================
+	HEADER
+	========================*/
+	#head_line{
+		padding:5px 0;
+		background-color:#FAFAFA;
+		text-align:left;
+	}
+	#head_line h1{
+		font-size:11px;
+		margin:0 0 0 10px;
+		width:260px;
+		line-height:1.5;
+	}
+	.head{
+		/*PCVar 非表示*/
+		display:none;
+	}
+	
+	/*HAMBURGER_MENU START*/
+	#ham-menu {
+		background-color: #fff; /*メニュー背景色*/
+		box-sizing: border-box;
+		height: 100%;
+		padding: 10px 40px; /*メニュー内左右上下余白*/
+		position: fixed;
+		right: -300px; /*メニュー横幅 width と合わせる*/
+		top: 0;
+		transition: transform 0.3s linear 0s; /*0.3s はアニメーションにかかる時間*/
+		width: 300px; /*メニュー横幅*/
+		z-index: 1000;
+	}
+	
+	#menu-background {
+		background-color: #333; /*黒背景*/
+		display: block;
+		height: 100%;
+		opacity: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		transition: all 0.3s linear 0s; /*0.3s はアニメーションにかかる時間*/
+		width: 100%;
+		z-index: -1;
+	}
+	
+	#menu-icon {
+		background-color: #fff; /*アイコン部分背景色*/
+		border-radius: 0 0 0 10px; /*左下角丸*/
+		color: #333; /*アイコン（フォント）色*/
+		cursor: pointer;
+		display: block;
+		font-size: 50px; /*アイコン（フォント）サイズ*/
+		height: 50px; /*アイコン縦高さ*/
+		line-height: 50px; /*縦位置中央化*/
+		position: fixed;
+		right: 0;
+		text-align: center;
+		top: 0;
+		width: 50px; /*アイコン横幅*/
+		transition: all 0.3s linear 0s; /*0.3s はアニメーションにかかる時間*/
+		z-index: 1000;
+	}
+	#menu-cb {
+		display: none; /*チェックボックス本体は消しておく*/
+	}
+	
+	#menu-cb:checked ~ #ham-menu,
+	#menu-cb:checked ~ #menu-icon {
+		transform: translate(-300px); /*メニュー本体横幅 width と合わせる*/
+	}
+	
+	#menu-cb:checked ~ #menu-background {
+		opacity: 0.5;
+		z-index: 999;
+	}
+	
+	#ham-menu ul{
+		list-style-type:none;
+	}
+	#ham-menu ul li:first-child{
+		margin-top:10px;
+	}
+	#ham-menu ul li{
+		margin-bottom:30px;
+	}
+	#ham-menu ul li a{
+		color:#333;
+		/*text-decoration:none;*/
+		font-family: 'Share Tech Mono', monospace;
+		font-size:20px;
+	}
+	/*HAMBURGER_MENU END*/
+	
+	
+	/*========================
+	CONTENTS
+	========================*/
+	article.content{
+		max-width:640px;
+		width:90%;
+		margin:5% auto 0 auto;
+	}
+	/*WORKS START*/
+	article.work h3{
+		font-size:16px;
+		font-weight:bold;
+	}
+	article.work h3 span{
+		font-size:18px;
+		font-family: 'Share Tech Mono', monospace;
+	}
+	article.work h3 span:before{
+		content:"|";
+		margin:0 8px;
+	}
+	article.work .description{
+		font-size:13px;
+		margin-top:10px;
+	}
+	article.work a{
+		text-decoration:none;
+		color:#333;
+	}
+	article.work section{
+		margin-top:10%;
+		border-bottom: dotted 1px #CCC;
+		padding-bottom:10%;
+		/*display:table;*/
+	}
+	/*article.work section .img,
+	article.work section .text{
+		display:table-cell;
+	}*/
+	article.work section .img{
+		/*width:30%;
+		padding-right:5%;
+		vertical-align:middle;*/
+		max-width:200px;
+		margin:0 auto;
+		text-align:center;
+	}
+	article.work section .img img{
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+		border:solid 1px #F0F0F0;
+	}
+	article.work section .text{
+		/*width:40%;
+		vertical-align:top;*/
+		margin-top:30px;
+		word-break: break-all;
+	}
+	article.work section .text h4{
+		font-size:14px;
+		font-weight:bold;
+	}
+	article.work section .text ul{
+		list-style-type:none;
+		font-size:13px;
+		line-height:1.5;
+		display:table;
+		margin-top:10px;
+	}
+	article.work section .text ul li{
+		display:table-cell;
+	}
+	article.work section .text ul li:first-child{
+		text-align:center;
+		width:70px;
+		height:20px;
+		display:inline-block;
+		background-color:#ccc;
+		vertical-align: top;
+		border-radius:3px;
+		line-height:2;
+		font-size:11px;
+		margin-right:10px;
+	}
+	article.work section .text .site_description{
+		margin-top:20px;
+		font-size:13px;
+		line-height:1.5;
+	}
+	article.work section .text .url{
+		margin-top:20px;
+		font-size:12px;
+	}
+	/*WORKS END*/
+	
+	/*PROFILE START*/
+	article.profile h3{
+		font-size:16px;
+		font-weight:bold;
+	}
+	article.profile h3 span{
+		font-size:18px;
+		font-family: 'Share Tech Mono', monospace;
+	}
+	article.profile h3 span:before{
+		content:"|";
+		margin:0 8px;
+	}
+	article.profile section{
+		margin-top:20px;
+		word-break: break-all;
+		margin-bottom:500px;
+	}
+	article.profile section h4{
+		font-size:15px;
+		font-weight:bold;
+	}
+	article.profile section ul{
+		list-style-type:none;
+		margin-top:20px;
+	}
+	article.profile section ul li{
+		font-size:14px;
+		margin-top:20px;
+		line-height:1.5;
+	}
+	article.profile section .mail{
+		font-size:14px;
+		margin-top:40px;
+		line-height:1.5;
+	}
+	article.profile section .mail a{
+		color:#333;
+	}
+	/*PROFILE END*/
+	
+	/*========================
+	FOOTER
+	========================*/
+	footer{
+		background-color: #FAFAFA;
+		padding:30px 0;
+	}
+	.foot{
+		text-align:center;
+	}
+	.foot small{
+		font-size:12px;
+
+	}
+}

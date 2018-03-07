@@ -1,0 +1,353 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*==================================================
+
+PORTFOLIO PC
+(index.html)
+
+==================================================*/
+@media screen and (min-width: 640px) {
+	/*========================
+	基本設定
+	========================*/
+	body{
+		font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+		font-size: 16px;
+		color: #333;
+		 animation: fadeIn 2s ease 0s 1 normal;
+		-webkit-animation: fadeIn 2s ease 0s 1 normal;
+	}
+	@keyframes fadeIn {
+		0% {opacity: 0}
+		100% {opacity: 1}
+	}
+
+	@-webkit-keyframes fadeIn {
+		0% {opacity: 0}
+		100% {opacity: 1}
+	}
+	a:link{
+		color: #666;
+		text-decoration: none;
+	}
+	a:visited{
+		color: #666;
+		text-decoration: none;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+	.clearfix:after {
+		content:" ";
+		display:block;
+		clear:both;
+	}
+	.head,
+	article,
+	.foot {
+		max-width: 1050px;
+		width:100%;
+		margin-top: 0px;
+		margin-right: auto;
+		margin-bottom: 0px;
+		margin-left: auto;
+	}
+	/*========================
+	HEADER
+	========================*/
+	#hum_wraper{
+		/*SP_MENU 非表示*/
+		display:none;
+	}
+	header.head_wrapper{
+		width:100%;
+		padding-bottom:20px;
+		border-bottom:1px solid #ccc;
+		z-index:999;
+		background:#fff;
+	}
+	#head_line{
+		background-color: #FAFAFA;
+		padding: 10px 0;
+	}
+	#head_line h1{
+		font-size: 11px;
+		width:100%;
+		max-width:1050px;
+		margin:0 auto;
+	}
+	.head div.fl{
+		float:left;
+		margin-top:10px;
+	}
+	.head h2 {
+		font-size: 14px;
+		font-weight: bold;
+		margin-top:20px;
+	}
+	.head h2 span {
+		color:#fff;
+		font-weight:normal;
+		font-family: 'Share Tech Mono', monospace;
+		margin-right:10px;
+		background-color:#999;
+		padding:4px 6px 3px 6px;
+		border-radius:3px;
+	}
+	.head nav.fr{
+		float: right;
+	}
+	.head nav.fr ul{
+		margin-top:30px;
+	}
+	.head nav.fr {
+		display: inline-block;
+		font-size: 13px;
+		font-weight: bold;
+		padding-left: 20px;
+	}
+	.head nav.fr li {
+		font-family: 'Share Tech Mono', monospace;
+		display: inline-block;
+		font-size: 20px;
+		font-weight: bold;
+		padding-left: 20px;
+	}
+	/*ホバーエフェクト START*/
+	.snip1284 {
+	  text-align: center;
+	  text-transform: uppercase;
+	  font-weight: 500;
+	  letter-spacing: 1px;
+	}
+	.snip1284 * {
+	  -webkit-box-sizing: border-box;
+	  box-sizing: border-box;
+	  -webkit-transition: all 0.35s ease;
+	  transition: all 0.35s ease;
+	}
+	.snip1284 li {
+	  display: inline-block;
+	  list-style: outside none none;
+	  padding: 0;
+	}
+	.snip1284 a {
+	  padding: 0 0.6em;
+	  position: relative;
+	  text-decoration: none;
+	  color: #000000;
+	}
+	.snip1284 a:before,
+	.snip1284 a:after {
+		width: 3px;
+		height: 0;
+		position: absolute;
+		content: '';
+		-webkit-transition: all 0.35s ease;
+		transition: all 0.35s ease;
+		background-color: #C7C7C7;
+	}
+	.snip1284 a:before {
+	  top: 0;
+	  right: 0;
+	}
+	.snip1284 a:after {
+	  bottom: 0;
+	  left: 0;
+	}
+	.snip1284 a:hover,
+	.snip1284 .current a {
+		color: #000000;
+	}
+	.snip1284 a:hover:before,
+	.snip1284 .current a:before,
+	.snip1284 a:hover:after,
+	.snip1284 .current a:after {
+	  height: 100%;
+	}
+	/*ホバーエフェクト END*/
+	/*========================
+	CONTENTS
+	========================*/
+	article.content{
+		margin-top:30px;
+	}
+	article.content h3{
+		font-size:16px;
+		font-weight:bold;
+	}
+	article.content h3 span{
+		font-size:18px;
+		font-weight:bold;
+		font-family: 'Share Tech Mono', monospace;
+	}
+	article.content h3 span:before{
+		content:"|";
+		margin:0 10px;
+	}
+	article.content .description{
+		font-size:14px;
+		margin-top:10px;
+	}
+	article.content section{
+		width:100%;
+		padding-bottom:70px;
+		border-bottom:1px dotted #ccc;
+	}
+	/*WORKS START*/
+	article.work #wrapper{
+		overflow: hidden;
+		*zoom:1;
+		width: 100%;
+		margin: 70px auto 0 auto;
+	}
+	article.work section{
+		/*display:table;*/
+		margin:60px -10px 0 0;
+	}
+	article.work section div.img,
+	article.work section div.text{
+		/*display:table-cell;*/
+		float: left;
+		margin:0 10px 0 0;
+	}
+	article.work section div.img{
+		vertical-align: middle;
+		padding-right:30px;
+		width: 23%;
+	}
+	article.work section div.img img{
+		/*width:100%;
+		height:auto;*/
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+		border:solid 1px #F0F0F0;
+	}
+	article.work section div.text{
+		vertical-align:top;
+		width: 62%;
+		padding: 0 2%;
+	}
+	article.work section div.text h4{
+		font-size:16px;
+		font-weight:bold;
+	}
+	article.work div.text .site_scale,
+	article.work div.text .site_respon,
+	article.work div.text .site_tool,
+	article.work div.text .site_description,
+	article.work div.text .url{
+		font-size:14px;
+	}
+	article.work div.text .site_scale,
+	article.work div.text .site_respon,
+	article.work div.text .site_tool{
+		padding-top:10px;
+	}
+	article.work div.text ul{
+		list-style-type: none;
+		display: table;
+	}
+	article.work div.text ul li{
+		display: table-cell;
+	}
+	article.work div.text .site_scale li:first-child,
+	article.work div.text .site_respon li:first-child,
+	article.work div.text .site_tool li:first-child{
+		background-color: #E6E6E6;
+		border-radius: 3px;
+		font-size: 12px;
+		font-weight: bold;
+		color: #666;
+		margin-right:10px;
+		display:inline-block;
+		width: 70px;
+		height: 25px;
+		line-height: 2;
+		text-align: center;
+	}
+	article.work div.text .site_scale{
+		margin-top:15px;
+		line-height:1.5;
+	}
+	article.work div.text .site_respon,
+	article.work div.text .site_tool{
+		margin-top:10px;
+		word-break: break-all;
+	}
+	article.work div.text .site_description{
+		margin-top:40px;
+		line-height:1.5;
+	}
+	article.work div .url{
+		margin-top:20px;
+	}
+	/*WORKS END*/
+	/*PROFILE START*/
+	article.profile{
+		margin-bottom:500px;
+	}
+	article.profile section{
+		margin:40px auto 0 auto;
+		border:none;
+	}
+	.profile h4{
+		font-size:18px;
+		font-weight:bold;
+	}
+	.profile ul{
+		font-size:15px;
+		margin:20px 0 0 20px;
+	}
+	.profile ul li{
+		line-height:1.5;
+	}
+	.profile ul li:not(first-child){
+		margin-top:20px;
+	}
+	.profile .mail{
+		margin-top:30px;
+		line-height:2;
+	}
+	.profile .mail span{
+		font-size:13px;
+		font-weight:bold;
+		color:#666;
+		padding:3px 6px;
+		background-color:#E6E6E6;
+		border-radius:3px;
+		margin-right:10px;
+	}
+	.profile .mail a:link{
+		text-decoration:underline;
+	}
+	.profile .mail a:hover{
+		text-decoration:none;
+	}
+	/*PROFILE END*/
+	/*========================
+	FOOTER
+	========================*/
+	footer{
+		background-color: #FAFAFA;
+		padding: 30px 0;
+		margin-top: 30px;
+	}
+	.foot{
+		text-align:center;
+	}
+	.foot small{
+		font-size:12px;
+
+	}
+	.list-mv05{
+		transform: translate(0,40px);
+		-webkit-transform: translate(0,40px);
+	}
+	.mv05{
+		transform: translate(0,0);
+		-webkit-transform: translate(0,0);
+	}
+}
