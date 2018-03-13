@@ -69,7 +69,7 @@ PORTFOLIO PC
 	}
 	#head_line{
 		background-color: #FAFAFA;
-		padding: 10px 0;
+		padding: 10px;
 	}
 	#head_line h1{
 		font-size: 11px;
@@ -80,6 +80,7 @@ PORTFOLIO PC
 	.head div.fl{
 		float:left;
 		margin-top:10px;
+		margin-left:10px
 	}
 	.head h2 {
 		font-size: 14px;
@@ -97,15 +98,13 @@ PORTFOLIO PC
 	}
 	.head nav.fr{
 		float: right;
-	}
-	.head nav.fr ul{
-		margin-top:30px;
-	}
-	.head nav.fr {
 		display: inline-block;
 		font-size: 13px;
 		font-weight: bold;
-		padding-left: 20px;
+		margin-right: 10px;
+	}
+	.head nav.fr ul{
+		margin-top:30px;
 	}
 	.head nav.fr li {
 		font-family: 'Share Tech Mono', monospace;
@@ -173,6 +172,9 @@ PORTFOLIO PC
 	article.content{
 		margin-top:30px;
 	}
+	article.content .content_wrapper{
+		margin:0 10px;
+	}
 	article.content h3{
 		font-size:16px;
 		font-weight:bold;
@@ -194,6 +196,9 @@ PORTFOLIO PC
 		width:100%;
 		padding-bottom:70px;
 		border-bottom:1px dotted #ccc;
+	}
+	article.content section.last_content{
+		border:none;
 	}
 	/*WORKS START*/
 	article.work #wrapper{

@@ -2,12 +2,11 @@
 /* CSS Document */
 
 /*==================================================
-	
+
 PORTFOLIO MOBILE
 (index.html)
-	
-==================================================*/
 
+==================================================*/
 @media screen and (max-width: 640px) {
 	/*========================
 	基本設定
@@ -38,7 +37,7 @@ PORTFOLIO MOBILE
 		/*PCVar 非表示*/
 		display:none;
 	}
-	
+
 	/*HAMBURGER_MENU START*/
 	#ham-menu {
 		background-color: #fff; /*メニュー背景色*/
@@ -52,7 +51,7 @@ PORTFOLIO MOBILE
 		width: 300px; /*メニュー横幅*/
 		z-index: 1000;
 	}
-	
+
 	#menu-background {
 		background-color: #333; /*黒背景*/
 		display: block;
@@ -65,7 +64,7 @@ PORTFOLIO MOBILE
 		width: 100%;
 		z-index: -1;
 	}
-	
+
 	#menu-icon {
 		background-color: #fff; /*アイコン部分背景色*/
 		border-radius: 0 0 0 10px; /*左下角丸*/
@@ -86,17 +85,17 @@ PORTFOLIO MOBILE
 	#menu-cb {
 		display: none; /*チェックボックス本体は消しておく*/
 	}
-	
+
 	#menu-cb:checked ~ #ham-menu,
 	#menu-cb:checked ~ #menu-icon {
 		transform: translate(-300px); /*メニュー本体横幅 width と合わせる*/
 	}
-	
+
 	#menu-cb:checked ~ #menu-background {
 		opacity: 0.5;
 		z-index: 999;
 	}
-	
+
 	#ham-menu ul{
 		list-style-type:none;
 	}
@@ -108,13 +107,12 @@ PORTFOLIO MOBILE
 	}
 	#ham-menu ul li a{
 		color:#333;
-		/*text-decoration:none;*/
 		font-family: 'Share Tech Mono', monospace;
 		font-size:20px;
 	}
 	/*HAMBURGER_MENU END*/
-	
-	
+
+
 	/*========================
 	CONTENTS
 	========================*/
@@ -148,16 +146,11 @@ PORTFOLIO MOBILE
 		margin-top:10%;
 		border-bottom: dotted 1px #CCC;
 		padding-bottom:10%;
-		/*display:table;*/
 	}
-	/*article.work section .img,
-	article.work section .text{
-		display:table-cell;
-	}*/
+	article.work section.last_content{
+		border: none;
+	}
 	article.work section .img{
-		/*width:30%;
-		padding-right:5%;
-		vertical-align:middle;*/
 		max-width:200px;
 		margin:0 auto;
 		text-align:center;
@@ -169,8 +162,6 @@ PORTFOLIO MOBILE
 		border:solid 1px #F0F0F0;
 	}
 	article.work section .text{
-		/*width:40%;
-		vertical-align:top;*/
 		margin-top:30px;
 		word-break: break-all;
 	}
@@ -210,7 +201,7 @@ PORTFOLIO MOBILE
 		font-size:12px;
 	}
 	/*WORKS END*/
-	
+
 	/*PROFILE START*/
 	article.profile h3{
 		font-size:16px;
@@ -251,7 +242,7 @@ PORTFOLIO MOBILE
 		color:#333;
 	}
 	/*PROFILE END*/
-	
+
 	/*========================
 	FOOTER
 	========================*/
